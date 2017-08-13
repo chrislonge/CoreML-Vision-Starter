@@ -12,6 +12,8 @@
 		C5947F661F40F0A000976414 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5947F641F40F0A000976414 /* Main.storyboard */; };
 		C5947F681F40F0A000976414 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5947F671F40F0A000976414 /* Assets.xcassets */; };
 		C5947F6B1F40F0A000976414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5947F691F40F0A000976414 /* LaunchScreen.storyboard */; };
+		C5947F761F40F4F300976414 /* Resnet50.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C5947F741F40F4CD00976414 /* Resnet50.mlmodel */; };
+		C5947F771F40F4F800976414 /* GoogLeNetPlaces.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C5947F751F40F4CF00976414 /* GoogLeNetPlaces.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C5947F671F40F0A000976414 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5947F6A1F40F0A000976414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5947F6C1F40F0A000976414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5947F741F40F4CD00976414 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
+		C5947F751F40F4CF00976414 /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GoogLeNetPlaces.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,32 @@
 		C5947F5F1F40F0A000976414 /* VisionMLStarter */ = {
 			isa = PBXGroup;
 			children = (
-				C5947F601F40F0A000976414 /* AppDelegate.swift */,
 				C5947F621F40F0A000976414 /* ViewController.swift */,
 				C5947F641F40F0A000976414 /* Main.storyboard */,
-				C5947F671F40F0A000976414 /* Assets.xcassets */,
 				C5947F691F40F0A000976414 /* LaunchScreen.storyboard */,
-				C5947F6C1F40F0A000976414 /* Info.plist */,
+				C5947F721F40F3D200976414 /* Resources */,
+				C5947F731F40F3FA00976414 /* Supporting FIles */,
 			);
 			path = VisionMLStarter;
+			sourceTree = "<group>";
+		};
+		C5947F721F40F3D200976414 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C5947F751F40F4CF00976414 /* GoogLeNetPlaces.mlmodel */,
+				C5947F741F40F4CD00976414 /* Resnet50.mlmodel */,
+				C5947F671F40F0A000976414 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C5947F731F40F3FA00976414 /* Supporting FIles */ = {
+			isa = PBXGroup;
+			children = (
+				C5947F601F40F0A000976414 /* AppDelegate.swift */,
+				C5947F6C1F40F0A000976414 /* Info.plist */,
+			);
+			path = "Supporting FIles";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +158,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5947F631F40F0A000976414 /* ViewController.swift in Sources */,
+				C5947F761F40F4F300976414 /* Resnet50.mlmodel in Sources */,
 				C5947F611F40F0A000976414 /* AppDelegate.swift in Sources */,
+				C5947F771F40F4F800976414 /* GoogLeNetPlaces.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +302,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.capitalone.VisionMLStarter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -291,7 +315,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.capitalone.VisionMLStarter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
