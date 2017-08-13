@@ -26,6 +26,7 @@
 		C5947F6C1F40F0A000976414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5947F741F40F4CD00976414 /* Resnet50.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50.mlmodel; sourceTree = "<group>"; };
 		C5947F751F40F4CF00976414 /* GoogLeNetPlaces.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = GoogLeNetPlaces.mlmodel; sourceTree = "<group>"; };
+		C5947F781F41024300976414 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +43,7 @@
 		C5947F541F40F0A000976414 = {
 			isa = PBXGroup;
 			children = (
+				C5947F781F41024300976414 /* README.md */,
 				C5947F5F1F40F0A000976414 /* VisionMLStarter */,
 				C5947F5E1F40F0A000976414 /* Products */,
 			);
